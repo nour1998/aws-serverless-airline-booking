@@ -35,7 +35,7 @@ Service | Language | Description
 
 ### Front-end
 
-See more information about our [Front-end, components, routing and convention](./src/frontend/README.md)
+See more information about our [Front-end, components, routing and convention](./src/frontend/README.md).
 
 **High level infrastructure architecture**
 
