@@ -1,6 +1,10 @@
 ## AWS Serverless Airline Booking
 
-Serverless Airline Booking is a complete web application that provides Flight Search, Payment, Booking and Loyalty points including end-to-end testing, GraphQL and CI/CD. This web application was the theme of Build on Serverless Season 2 on AWS Twitch running from April 24th until August 7th - Check out [Twitch branch for the list of 14 episodes](https://github.com/aws-samples/aws-serverless-airline-booking/tree/twitch).
+Serverless Airline Booking is a complete web application that provides Flight Search, Payment, Booking and Loyalty points including end-to-end testing, GraphQL and CI/CD (mention the entire world please ) . This web application was the theme of Build on Serverless Season 2 on AWS Twitch running from April 24th until August 7th . 
+
+Please check out  here [Twitch branch for the list of 14 episodes](https://github.com/aws-samples/aws-serverless-airline-booking/tree/twitch).
+
+## About the Link 
 
 For more up-to-date information on what's being implemented, take a look at our current [Boards](https://github.com/aws-samples/aws-serverless-airline-booking/projects).
 
@@ -10,15 +14,32 @@ For more up-to-date information on what's being implemented, take a look at our 
 
 To get started with the Serverless Airline application, you can deploy into your AWS Account by following our [Get Started instructions](./docs/getting_started.md)
 
-## Stack
+## Coding
 
-Summary of what the stack looks like now including a picture with the core tech:
+Here , you can find the summary of how the stack looks like , including a picture with the core thech :
 
-* **Front-end** - Vue.js as the core framework, Quasar for UI, Amplify for Auth UI component and AWS integration, and Stripe JS with Stripe Elements for card tokenization, validation, etc.
-* **Data** - All data is modeled after GraphQL types and stored in DynamoDB. Python being the core language for all services except Loyalty that's written in Typescript, and JavaScript for front-end.
-* **API** - GraphQL is managed by AppSync and also acts as an API Hub to interact with other services. Loyalty implements a REST API to demonstrate how to secure service-to-service communication while maintaining a public endpoint. Payment API is also based on REST to demonstrate an external payment provider.
+
+
+* **Front-end** - Vue.js as the core framework.
+                - Quasar for User Interface . 
+                -Amplify for Auth UI component.
+                -AWS integration
+                - We use Stripe JS with Stripe Elements for card tokenizationand for validation . 
+                
+* **Data** - We collect all the data after GraphQL types , then we stored in DynamoDB.  
+           - For the front-end , we use Typescript , Javascript. 
+           - For all the services , we use Python.
+           
+* **API** - GraphQL is managed by AppSync .
+          -  GraphQL acts as an API Hub to interact with other services.
+          - Loyalty implements a REST API to demonstrate how to secure service-to-service communication while maintaining a public endpoint. 
+          - Payment API is also based on REST to demonstrate an external payment provider.
+
+
 * **Auth** - Cognito provides JSON Web Tokens (JWT) and along with AppSync fine-grained authorization on what data types users can access.
-* **Messaging** - Booking workflow is managed by Step Functions while SNS provides service-to-service communication through messaging between Booking and Loyalty.
+
+
+* **Messaging**  - Booking workflow is managed by Step Functions while SNS provides service-to-service communication through messaging between Booking and Loyalty.
 
 ![Core stack](./media/core-stack.png)
 
