@@ -64,4 +64,6 @@ See more information about our [Front-end, components, routing and convention](.
 
 ## License Summary
 
-This sample code is made available under the MIT-0 license. See the LICENSE file.
+
+Our project is MIT -0 license and open source
+
